@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 50px 30px;
+  font-family: "Trebuchet ms", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  padding-inline: 30px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  font: clamp(1rem, 5vw, 1.5rem) Georgia, serif;
+  box-shadow: 0px 1px 10px 5px rgba(34, 34, 34, 0.5);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+img, video {
+  max-width: 100%;
+}
+
+section {
+  width: 100%;
+}
+
+footer {
+  padding: 30px 20px;
+}
+
+.graphics__container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: start;
+  margin: 50px 0;
+}
+.graphics__item--long {
+  max-width: 300px;
+}
+.graphics__item--wide {
+  width: calc((650px - 100%) * 9999);
+  max-width: 100%;
+  min-width: 50%;
+}
+.graphics__desc {
+  flex-grow: 1;
+  flex-basis: 40%;
+  padding: 0 1rem;
+  text-align: center;
+  text-align: left;
+  max-width: 60%;
+  margin: 0 auto;
+  min-width: 300px;
+}
+.graphics__desc--light {
+  color: #666;
+}
+
+.web-design {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+.web-design iframe {
+  flex: 1 1 40%;
+  min-width: 470px;
+}
+
+/*# sourceMappingURL=style.css.map */

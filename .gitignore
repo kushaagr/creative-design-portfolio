@@ -1,0 +1,13 @@
+# Sass.gitignore
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+_x*.s[ac]ss
+scss/
+
+# Custom
+icon/favicon?.*
+
+# Sublime-related
+*.sublime-*
