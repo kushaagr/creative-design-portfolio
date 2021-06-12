@@ -44,7 +44,12 @@ footer {
 .graphics__container {
   display: flex;
   flex-flow: row wrap;
+  /* Error: Long video was leaning over right 
+  * side  with "space-around", when viewed on github 
+  * pages' deployed page. 
+  * */
   justify-content: space-around;
+  justify-content: center;
   align-items: center;
   align-content: start;
   margin: 50px 0;
@@ -55,7 +60,9 @@ footer {
 .graphics__item--wide {
   width: calc((650px - 100%) * 9999);
   max-width: 100%;
+  /* Fallback */
   min-width: 50%;
+  min-width: min(500px, 50%);
 }
 .graphics__desc {
   flex-grow: 1;
