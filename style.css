@@ -31,7 +31,13 @@ h3 {
 }
 
 h2 {
+    --mar-top: 2em;
     font-size: 1.9rem;
+/*    margin-top: var(--mar-top);
+    margin-block-start: var(--mar-top);
+*/
+    padding-top: var(--mar-top);
+    padding-block-start: var(--mar-top);
 }
 
 img, video {
@@ -65,7 +71,9 @@ footer {
     align-items: center;
     align-content: start;
     margin: 50px 0;
-    gap: 1rem;
+/*    gap: 1rem;*/
+/*    gap: min(2%, 1rem);*/
+    gap: .5rem;
 }
 
 .graphics__item--long {
@@ -101,5 +109,11 @@ footer {
     flex: 1 1 40%;
     min-width: 450px;
 }
+
+.embeds iframe {
+    max-width: 31%;
+    min-width: min-content;
+}
+
 
 /*# sourceMappingURL=style.css.map */
